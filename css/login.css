@@ -1,0 +1,66 @@
+body{
+	background-color: #efefef;
+}
+
+nav{
+	background: #3b95e9;
+	height:2rem;
+	color: white;
+	line-height: 2rem;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+p{
+	color: red;
+	font-size: 0.6rem;
+	font-weight: bold;
+	line-height: 1.4rem;
+}
+.fc{
+	display: flex;
+	flex-direction: column;
+}
+.justify-center{
+	justify-content: flex-start;
+}
+.fdr{
+	flex-direction: row;
+}
+input{
+	border: none;
+	margin-bottom: 0.05rem;
+	height: 3rem;
+	font-size: 1rem;
+	color: #eeeee;
+}
+input::-moz-placeholder{
+	color: #eeeee;
+	font-size: 1.2rem;
+	position: relative; 
+	left: 3rem;
+	}
+	
+.cap{
+	
+	
+	position: absolute;
+	left: 16rem;
+	top: 8.6rem;
+	
+	width="55rem" height="48rem" style="position: absolute;left: 16rem;top: 8.6rem;"
+}
+
+button{
+	background: #4cd964;
+	width: 100%;
+	height: 3rem;
+	opacity: 0.9;
+	color: white;
+	font-size: 1.6rem;
+}
+h6{
+	margin-top: 1rem;
+	color: #3b95e9;
+	position: relative;
+	
+}
