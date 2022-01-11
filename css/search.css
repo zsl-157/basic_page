@@ -1,0 +1,48 @@
+body{
+	background-color: #efefef;
+}
+
+nav{
+	background: #3b95e9;
+	height:2rem;
+	color: white;
+	line-height: 2rem;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+.subm_input{
+	width: 25%;
+	height: 2rem;
+	background: #3b95e9;
+	opacity: 0.85;
+	line-height: 2rem;
+	font-size: 1rem;
+	color: white;
+	
+}
+input{
+	border: none;
+}
+.text_input{
+	color: #747474;
+	width: 72%;
+}
+.show_history{
+	display: flex;
+	align-content: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	color: #747474;
+	margin-top: 1rem;
+}
+.history_bar{
+
+	text-align: left;
+	
+}
+.search_result_container{
+	margin-top: 1rem;
+	background: #white;
+	cursor: pointer;
+	color: white;
+}

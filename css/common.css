@@ -4,3 +4,16 @@
 	list-style: none;
 	list-style-type: none;
 }
+.fc{
+	display: flex;
+	flex-direction: column;
+}
+.justify-start{
+	justify-content: flex-start;
+}
+.fdr{
+	flex-direction: row;
+}
+.justify-center{
+	justify-content: space-between;
+}
