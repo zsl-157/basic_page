@@ -4,17 +4,24 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" href="../css/common.css" />
+		<script type="text/javascript" src="../js/common/jquery-3.6.0.js"></script>
 		<link rel="stylesheet" href="../css/search.css" />
 	</head>
 	<body>
+		<div class="top_container">
 		<nav>搜索</nav>
-		<div class="fc fdr justify-center">
-			<input class="text_input" type="text" placeholder="请输入课程名称"/>
-			<input class="subm_input " type="submit" />
+		<div class="fc fdr justify-center"  id="courseSearchInp">
+			<input class="text_input" type="text" placeholder="请输入课程名称" />
+			<input class="subm_input " type="button" value="提交" onclick="searchHistory()" />
 		</div>
+		<div class="hist_title">历史记录</div>
 		<div class="show_history">
 			<div class="history_bar">
-				第三方sdafsdafsdafd
+				
+				<ul class="hist_li">
+					<li>Java基础</li>
+					<li>Spring</li>
+				</ul>
 			</div>
 			
 		</div>
@@ -25,5 +32,7 @@
 				</li>
 			</ul>
 		</div>
+		</div>
 	</body>
+	<script type="text/javascript" src="../js/search/search.js"></script>
 </html>
