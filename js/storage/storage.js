@@ -52,14 +52,17 @@ function setAttr(attrName){
 
 function createHist(){
 	let d = document.getElementsByClassName("hist_li")[0].children;
-	let sto = getStorage("history")
-	for(let i=0;i<4;i++){
-		d[i].innerHTML = sto;
-		console.log(sto)
+	let sto = getStorage("history").split(",")
+	for(let i=0;i<sto.length;i++){
+		
+		d[i].innerHTML = sto[i];
+		
 		
 	}
+	console.log(sto)
 	console.log(d)
 }
-createEle('li',2,document.getElementsByClassName("hist_li")[0]);
+let num = getStorage("history").split(",").length;
+createEle('li',num,document.getElementsByClassName("hist_li")[0]);
 createHist()
 

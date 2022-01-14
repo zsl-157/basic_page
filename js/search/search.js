@@ -9,7 +9,7 @@ function searchHistory(){
 	let courseInputList = $('#courseSearchInp').children();
 	let cousrseTextInput = courseInputList[0];
 	let courseSubmitInput = courseInputList[1];
-	let searchEntryList = [];
+	
 	console.log(cousrseTextInput);
 	//搜索记录的次数
 	let showSearchHistory = false;
@@ -19,17 +19,28 @@ function searchHistory(){
 		
 	}
 	console.log(`textValue is ${textValue}`);
+	
+	let searchEntryList = getStorage("history")
+	if(!searchEntryList){
+		searchEntryList = setStorage("history")
+		searchEntryList = getStorage("history").split(",");
+		searchEntryList.shift();
+	}else{
+		searchEntryList = getStorage("history").split(",")
+	}
+	
 	searchEntryList.push(textValue);
+	console.log(`searchEntryList is ${searchEntryList}`)
 	setStorage("history",searchEntryList);
 	let stor = getStorage("history");
-	console.log('stor is '+ typeof stor);
+	console.log(`stor is :${stor}`)
 }
 
 
 function clickTextInput(){
 	$(".text_input").focus(function(){
 		let courseInputList = $('#courseSearchInp').children()[0];
-		let hist_storage = getStorage("name");
+		let hist_storage = getStorage("history");
 		let histTitle = $('.hist_title')[0];
 		if(hist_storage){
 			histTitle.style.display = 'block';
