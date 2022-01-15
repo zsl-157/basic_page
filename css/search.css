@@ -2,14 +2,7 @@ body{
 	background-color: #efefef;
 }
 
-nav{
-	background: #3b95e9;
-	height:2rem;
-	color: white;
-	line-height: 2rem;
-	text-align: center;
-	margin-bottom: 0.5rem;
-}
+
 .top_container{
 	background: white;
 }

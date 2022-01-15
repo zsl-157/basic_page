@@ -1,0 +1,16 @@
+.menut_row{
+	cursor: pointer;
+}
+
+.menut_row p{
+	font-size: 0.8rem;
+	text-align: center;
+	color: #747474;
+	display: block;
+	position: relative;
+	top: -0.3rem;
+	
+}
+.menu_container:last-of-type{
+	border-bottom: 1px solid #efefef;
+}
