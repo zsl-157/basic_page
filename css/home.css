@@ -14,3 +14,41 @@
 .menu_container:last-of-type{
 	border-bottom: 1px solid #efefef;
 }
+.course_container{
+	margin-top: 1rem;
+}
+.course_row{
+	border-bottom: 1px solid #efefef;
+	color: #747474;
+}
+
+.vip{
+	background: yellow;
+	width: 1.5rem;
+	height: 0.8rem;
+	text-align: center;
+	font-size: 0.6rem;
+	color: #747474;
+}
+.introduct{
+	padding-left: .2rem;
+	
+}
+
+.introduct p{
+	display: block;
+	line-height: 2rem;
+}
+.course_title{
+	display: flex;
+	position: relative;
+	top: -.3rem;
+	font-size: 1.3rem;
+	padding-top: -200rem;
+}
+.five_star{
+	display: flex;flex-direction: row;width: 28%;
+}
+svg{
+	display: block;
+}
