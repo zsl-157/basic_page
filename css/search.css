@@ -15,7 +15,7 @@ body{
 	font-size: 1rem;
 	color: white;
 	position: relative;
-	right: 0.2rem;
+	left: 0.5rem;
 }
 input{
 	border: none;
@@ -52,6 +52,10 @@ input{
 	font-weight: bold;
 	color: #747474
 }
+.hist_li{
+	overflow: hidden;
+	height: 65%;
+}
 .hist_li li{
 	width: 100%;
 	background: white;
@@ -64,4 +68,12 @@ input{
 	background: #white;
 	cursor: pointer;
 	color: white;
+}
+.bottom_menu{
+	background: #3b95e9;
+	position: fixed;
+	top: 93%;
+	width: 100%;
+	height: 7%;
+	line-height: 3.2rem;
 }
